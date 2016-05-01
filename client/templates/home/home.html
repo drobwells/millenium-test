@@ -1,0 +1,65 @@
+<template name="home">
+  <div class="slide-header">
+    {{>tabs}}
+  </div>
+</template>
+
+<template name="tabs">
+  <div class="slide">
+      <div class="carousel-container">
+        {{>carousel}}
+      </div>
+  </div>
+  <div class="content-container">
+    {{>content}}
+  </div>
+</template>
+
+<template name="carousel">
+  <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"><div></div></li>
+      <li data-target="#carousel" data-slide-to="1"><div></div></li>
+      <li data-target="#carousel" data-slide-to="2"><div></div></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <a href="#"><img src="mill-test-slide-1.jpg" /></a>
+        <div class="carousel-caption">
+          <h3>Manhatten</h3>
+          <button class="special">Learn More</button>
+        </div>
+      </div>
+      <div class="item">
+        <a href="#"><img src="mill-test-slide-2.jpg" /></a>
+        <div class="carousel-caption">
+          <h3>Brooklyn</h3>
+          <button class="special">Learn More</button>
+        </div>
+      </div>
+      <div class="item">
+        <a href="#"><img src="mill-test-slide-3.jpg" /></a>
+        <div class="carousel-caption">
+          <h3>Washington Heights</h3>
+          <button class="special">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="content">
+  <div class="image-container img-responsive" style="background-image: url('mill-test-slide-4.jpg')">
+    <img class="img-responsive" src="mill-test-slide-5.jpg" style="visibility: hidden" alt="">
+    <h3>Manhatten</h3>
+  </div>
+  <div class="image-container">
+    <img class="img-responsive" src="mill-test-slide-5.jpg" alt="">
+    <h3>Brooklyn</h3>
+  </div>
+  <div class="image-container">
+    <img class="img-responsive" src="mill-test-slide-6.jpg" alt="">
+    <h3>Washington Heights</h3>
+  </div>
+</template>
